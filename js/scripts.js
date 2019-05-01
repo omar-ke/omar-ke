@@ -41,7 +41,7 @@ function check_pin_code() {
 
 /* Parliament House JavaScript */
 
-/* Checks if the candiadate values equal 10. If so it 'sumbits' the form to the AEC. */
+/* Checks if the candidate values equal 10. If so it 'submits' the form to the AEC. */
 function validateElectionForm() {
     var candidate1 = document.getElementById('candidate1').value;
     var candidate2 = document.getElementById('candidate2').value;
@@ -62,3 +62,6 @@ function validateElectionForm() {
         document.getElementById('candidateError').innerHTML = "You have not completed the form correctly! See the How to Vote section for more details."
     }
 }
+
+/* dhs */
+
