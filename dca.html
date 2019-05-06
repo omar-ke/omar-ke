@@ -8,16 +8,23 @@
     <link rel="icon" href="images/favicon.ico" type="ïmage/icon">
     <script src="js/bootstrap.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
     <script src="js/dca.js"></script>
 
 </head>
 
-<body>
+<body onload="Heatmap()">
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content"
+            aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <!-- Brand -->
@@ -52,33 +59,63 @@
     <!-- Bootstrap Grid -->
 
     <div class="row">
-        <div class="col-sm-3"><div class="inner">
+        <div class="col-sm-3">
+            <div class="inner">
 
 
                 <h3>Who we are</h3>
-                <p>We promote innovative and competitive communications and arts sectors. Through our analysis, advice and programs we aim to make digital technologies, communications services and cultural experiences better for everyone.</p>
+                <p>We promote innovative and competitive communications and arts sectors. Through our analysis, advice
+                    and programs we aim to make digital technologies, communications services and cultural experiences
+                    better for everyone.</p>
                 <h3>What we do</h3>
-                <p>We advise the Australian Government about the communications and arts sectors and deliver programs so Australians can enjoy the benefits of modern communications and cultural experiences.</p>
+                <p>We advise the Australian Government about the communications and arts sectors and deliver programs so
+                    Australians can enjoy the benefits of modern communications and cultural experiences.</p>
 
 
-        </div></div>
+            </div>
+        </div>
         <div class="col-sm-7">
-            <p>Pokem ipsum dolor sit amet Garbodor Kangaskhan Cottonee Raichu Seviper we're blasting off again. Hydro Pump Pokemon, it's you and me Wartortle Skiploom Forretress our courage will pull us through Persian. Teleport Scolipede Haunter Ursaring Tirtouga searching far and wide Cofagrigus. Pikachu Lucario Shuppet Hariyama Roselia Water MysteryBerry. Sand-Attack Slowpoke Medicham Sinnoh Phanpy Armaldo Feebas.
-                Poison Sting Meloetta Corphish Machoke Ariados Chingling Delcatty. Dark Lilligant Celebi Calcium Tyrogue Fire Red to catch them is my real test. Brock Meowth to extend our reach to the stars above Houndoom Jellicent Nincada Leavanny. Steel Pokemon The Movie 2000 Articuno Palpitoad Ivysaur Pansage Mr. Mime. Ut aliquip ex ea commodo consequat Pawniard you're not wearing shorts Lampent Zephyr Badge Lavender Town Caterpie.</p>
-            <p>Quis nostrud exercitation ullamco laboris nisi Tropius Soul Badge Ampharos Magnemite what kind of Pokemon are you Kabuto. Sapphire I'm on the road to Viridian City Escape Rope Meganium Krookodile Marill Zephyr Badge. Misty Klinklang Skarmory Sharpedo Glacier Badge Aron Mismagius. Charmeleon Whirlipede Pokemon, it's you and me Gengar Nidoran Tornadus Shelmet. Electric Ash's mother Zangoose Calcium Cloyster Muk Harden.
-                Hydro Pump Sharpedo Remoraid Golduck Wigglytuff Corsola Swoobat. Blizzard Pokemon, it's you and me Chimecho Snubbull Hitmonlee Lilligant Ghost. Velit esse cillum dolore eu fugiat nulla pariatur Marsh Badge Dunsparce Emolga Gardevoir Glitch City Seviper. Earthquake Dome Fossil Torkoal Pawniard Farfetch'd Tepig Herdier. Flying Gengar Pelipper consectetur adipisicing elit Honchkrow Flamethrower Deino.
-                Hive Badge Kadabra Gold Yanma Woobat Mienshao Dig. Water they're comfy and easy to wear Hydreigon Fuchsia City Simisage Donphan Patrat. Water Aron Rising Badge Mew Lugia Xatu Dratini. Ut aliquip ex ea commodo consequat Starly Growlithe Bagon Furret Kingdra Rattata. Thundershock Chimchar Furret Junichi Masuda Armaldo Tympole Helix Fossil.</p>
+            <p>Pokem ipsum dolor sit amet Garbodor Kangaskhan Cottonee Raichu Seviper we're blasting off again. Hydro
+                Pump Pokemon, it's you and me Wartortle Skiploom Forretress our courage will pull us through Persian.
+                Teleport Scolipede Haunter Ursaring Tirtouga searching far and wide Cofagrigus. Pikachu Lucario Shuppet
+                Hariyama Roselia Water MysteryBerry. Sand-Attack Slowpoke Medicham Sinnoh Phanpy Armaldo Feebas.
+                Poison Sting Meloetta Corphish Machoke Ariados Chingling Delcatty. Dark Lilligant Celebi Calcium Tyrogue
+                Fire Red to catch them is my real test. Brock Meowth to extend our reach to the stars above Houndoom
+                Jellicent Nincada Leavanny. Steel Pokemon The Movie 2000 Articuno Palpitoad Ivysaur Pansage Mr. Mime. Ut
+                aliquip ex ea commodo consequat Pawniard you're not wearing shorts Lampent Zephyr Badge Lavender Town
+                Caterpie.</p>
+            <p>Quis nostrud exercitation ullamco laboris nisi Tropius Soul Badge Ampharos Magnemite what kind of Pokemon
+                are you Kabuto. Sapphire I'm on the road to Viridian City Escape Rope Meganium Krookodile Marill Zephyr
+                Badge. Misty Klinklang Skarmory Sharpedo Glacier Badge Aron Mismagius. Charmeleon Whirlipede Pokemon,
+                it's you and me Gengar Nidoran Tornadus Shelmet. Electric Ash's mother Zangoose Calcium Cloyster Muk
+                Harden.
+                Hydro Pump Sharpedo Remoraid Golduck Wigglytuff Corsola Swoobat. Blizzard Pokemon, it's you and me
+                Chimecho Snubbull Hitmonlee Lilligant Ghost. Velit esse cillum dolore eu fugiat nulla pariatur Marsh
+                Badge Dunsparce Emolga Gardevoir Glitch City Seviper. Earthquake Dome Fossil Torkoal Pawniard Farfetch'd
+                Tepig Herdier. Flying Gengar Pelipper consectetur adipisicing elit Honchkrow Flamethrower Deino.
+                Hive Badge Kadabra Gold Yanma Woobat Mienshao Dig. Water they're comfy and easy to wear Hydreigon
+                Fuchsia City Simisage Donphan Patrat. Water Aron Rising Badge Mew Lugia Xatu Dratini. Ut aliquip ex ea
+                commodo consequat Starly Growlithe Bagon Furret Kingdra Rattata. Thundershock Chimchar Furret Junichi
+                Masuda Armaldo Tympole Helix Fossil.</p>
         </div>
         <div class="col-sm-2">image(?)</div>
     </div>
 </div>
 <br>
-<p><b>Phone</b> services are running:</p>
-<strong>
-    <a id="phone" onclick="Heatmap()">click</a>
-</strong>
-
-<br><br>
+<div>
+    <div>
+        <p><b>Phone</b> services are running:
+        <strong>
+            <a id="phone"></a>
+        </strong></p>
+    </div>
+    <div>
+        <p><b>Television</b> services are running:
+        <strong>
+            <a id="tv"></a>
+        </strong></p>
+    </div>
+</div>
 
 </body>
 <footer class="page-footer font-small bg-dark">
