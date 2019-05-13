@@ -14,6 +14,9 @@ function items() {
     document.getElementById('email').value = email[rand];
     document.getElementById('dob').value = dob[rand];
 }
+function submit() {
+    setTimeout('location.reload()', 1000);
+}
 /*
 function userSubmit() {
     setTimeout('location.reload()',5000);
