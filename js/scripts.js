@@ -54,7 +54,7 @@ function validateElectionForm() {
         document.getElementById('candidateSuccess').innerHTML = "Thank you for voting! Your form has been submitted to the AEC! This page will refresh in 5 seconds.";
         document.getElementById('candidateError').style.display = "none";
         document.getElementById('candidateError').innerHTML = "";
-        setTimeout('location.reload()',5000)
+        setTimeout('location.reload()',51000)
     } else {
         document.getElementById('candidateSuccess').style.display = "none";
         document.getElementById('candidateSuccess').innerHTML = "";

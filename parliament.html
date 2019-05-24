@@ -11,6 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 
 </head>
 
@@ -73,56 +74,66 @@
         </div></div>
         <div class="col-sm-6">
             <form>
+                <div class="row">
+                    <div class="col-sm-6">
                 <label>first name:</label>
-                <input type="text" placeholder="first name" required><br>
+                <input class="form-control" type="text" placeholder="first name" required>
                 <label>last name:</label>
-                <input type="text" placeholder="last name" required>
-                <br>
+                <input class="form-control" type="text" placeholder="last name" required>
+                    </div>
+                    <div class="col-sm-6">
                 <label>email:</label>
-                <input type="text" placeholder="email" required><br>
+                <input class="form-control" type="text" placeholder="email" required>
                 <label>birth date:</label>
-                <input type="date" placeholder="dd/mm/yyyy" required>
-                <br>
+                <input class="form-control" type="date" placeholder="dd/mm/yyyy" required>
+                    </div>
+                    <div class="col-sm-6">
                 <label for="candidate1">1st preference:</label>
-                <select id="candidate1" required>
+                <select class="form-control" id="candidate1" required>
                     <option selected value="0">select one...</option>
                     <option value="1">Ryan Nguyen</option>
                     <option value="2">Matthew Miller</option>
                     <option value="3">Samuel Sheridan</option>
                     <option value="4">Dylan Bock</option>
                 </select>
-                <br>
                 <label for="candidate2">2nd preference:</label>
-                <select id="candidate2" required>
+                <select class="form-control" id="candidate2" required>
                     <option selected value="0">select one...</option>
                     <option value="1">Ryan Nguyen</option>
                     <option value="2">Matthew Miller</option>
                     <option value="3">Samuel Sheridan</option>
                     <option value="4">Dylan Bock</option>
                 </select>
-                <br>
+                    </div>
+                    <div class="col-sm-6">
                 <label for="candidate3">3rd preference:</label>
-                <select id="candidate3" required>
+                <select class="form-control" id="candidate3" required>
                     <option selected value="0">select one...</option>
                     <option value="1">Ryan Nguyen</option>
                     <option value="2">Matthew Miller</option>
                     <option value="3">Samuel Sheridan</option>
                     <option value="4">Dylan Bock</option>
                 </select>
-                <br>
                 <label for="candidate4">4th preference:</label>
-                <select id="candidate4" required>
+                <select class="form-control" id="candidate4" required>
                     <option selected value="0">select one...</option>
                     <option value="1">Ryan Nguyen</option>
                     <option value="2">Matthew Miller</option>
                     <option value="3">Samuel Sheridan</option>
                     <option value="4">Dylan Bock</option>
                 </select>
-                <br>
-                <button type="submit" >submit</button>
+                    </div>
+                    <div class="col-sm-1 text-center">
+                <button type="submit" class="btn btn-success text-center" onclick="validateElectionForm()">Submit</button>
+                </div>
             </form>
         </div>
-        <div class="col-sm-3">image(?)</div>
+        <div class="alert alert-success" role="alert" id="candidateSuccess" style="display: none"></div>
+        <div class="alert alert-danger" role="alert" id="candidateError" style="display: none"></div>
+        </div>
+
+        <div class="col-sm-3">
+            <img src="images/parlia.png" height="208" width="300"/></div>
     </div>
 </div>
 <br>
