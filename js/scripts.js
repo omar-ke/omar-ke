@@ -11,32 +11,6 @@ function pinCheck() {
     document.getElementById("feedback").innerHTML = text;
 }
 
-//Enviro function
-function changeImage() {
-    var image = document.getElementById('secondary_power');
-    if (image.src.match("bulbon")) {
-        image.src = "images/pic_bulboff.gif";
-    } else {
-        image.src = "images/pic_bulbon.gif";
-    }
-}
-
-function check_pin_code() {
-    var pin_entered, text;
-    //Get the value of input field with id="pin_code"
-    pin_entered = document.getElementById("pin_code").value;
-    // Check to see if pin_entered is correct
-    if (pin_entered == "1234") {
-        text = '<div class="bs-example">\n' +
-            '<div class="row">\n' +
-            '<div class="col-md-6"><img src="images/pic_bulbon.gif" alt="" width="100" height="180" id="main_power"></div>\n' +
-            '<div class="col-md-6"><img id="secondary_power" onclick="changeImage()" src="images/pic_bulboff.gif" width="100" height="180" alt="bulb off"></div>\n' +
-            '</div>\n'
-    } else {
-        text = "Input Not valid";
-    }
-    document.getElementById("power_usage").innerHTML = text;
-}
 
 
 /* Parliament House JavaScript */
@@ -51,7 +25,7 @@ function validateElectionForm() {
 
     if (candidates == 10){
         document.getElementById('candidateSuccess').style.display = "block";
-        document.getElementById('candidateSuccess').innerHTML = "Thank you for voting! Your form has been submitted to the AEC! This page will refresh in 5 seconds.";
+        document.getElementById('candidateSuccess').innerHTML = "Thank you for voting! This page will refresh in 5 seconds.";
         document.getElementById('candidateError').style.display = "none";
         document.getElementById('candidateError').innerHTML = "";
         setTimeout('location.reload()',5000)
@@ -59,9 +33,6 @@ function validateElectionForm() {
         document.getElementById('candidateSuccess').style.display = "none";
         document.getElementById('candidateSuccess').innerHTML = "";
         document.getElementById('candidateError').style.display = "block";
-        document.getElementById('candidateError').innerHTML = "You have not completed the form correctly! See the How to Vote section for more details."
+        document.getElementById('candidateError').innerHTML = "You have not completed the form correctly!"
     }
 }
-
-/* dhs */
-
